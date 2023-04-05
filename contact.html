@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <form action="#" id="form">
+
+            <div class="social">
+                <!-- <div class="title">Get Started</div> -->
+                <div class="question">
+                    <!-- Already Have an account? <br> -->
+                    <!-- <span>Sign In</span> -->
+                </div>
+                <div class="btn">
+                    <div class="btn-">
+                        <!-- <img src="./images/icons8-google-48.png" alt="">Sign Up -->
+                    </div>
+                    <div class="btn-2">
+                        <!-- <img  src="./images/icons8-facebook-48.png"  alt="">Sign Up -->
+                    </div>
+                </div> <!---btn-->
+
+                <div class="or">Contact form</div>
+            </div>
+
+            <!-- user name input -->
+            <div>
+                <label for="username">Name</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Simer Preet">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-regular fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- Email input -->
+
+            <div>
+                <label for="email" required>Email</label>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="abc@gmail.com" >
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-regular fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+           <!--  Password input -->
+    
+            <!-- <div>
+                  <label for="message">Message</label>
+                  <i class="fa-solid fa-lock"></i>
+                <input type="message" name="message" id="message" placeholder="Password Here">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-regular fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div> -->
+            
+            <div>
+                <label for="number">Number</label>
+                <i class="fa-solid fa-phone"></i>
+                <input type="number" name="number" id="number" placeholder="number" required>
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-regular fa-circle-check success-icon"></i>
+                <div class="error"></div>
+               </div>
+
+            <textarea name="message" name="message" style="resize: none;" id="message" cols="30" rows="10" required ></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+
+    
+    </div> <!--container-->
+
+
+</body>
+<script src="./contact.js"></script>
+</html>
